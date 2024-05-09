@@ -174,6 +174,7 @@ After the final Workflow has completed, navigate back to the `Security` tab and 
 
 <img src="https://user-images.githubusercontent.com/6920330/96753441-e0f6dc80-139d-11eb-9a2a-d53075b6331e.png" width="80%"/>
 
+
 #### Traceability
 
 Click on the security alert and notice that it details when the fix was made, by whom, and the specific commit. This provides full traceability to detail when and how a security alert was fixed and exactly what was changed to remediate the issue.
