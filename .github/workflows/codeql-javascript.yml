@@ -23,7 +23,7 @@ jobs:
             - name: Checkout repository
               uses: actions/checkout@v3
               with:
-                sparse-checkout: advanced-security-javascript/**
+                sparse-checkout: advanced-security-javascript/
 
             - name: Initialize CodeQL
               uses: github/codeql-action/init@v2
