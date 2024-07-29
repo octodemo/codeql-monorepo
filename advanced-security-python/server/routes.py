@@ -1,9 +1,7 @@
 
 from flask import request, render_template, make_response
-
 from server.webapp import flaskapp, cursor
 from server.models import Book
-
 
 @flaskapp.route('/')
 def index():
@@ -12,6 +10,9 @@ def index():
     read = bool(request.args.get('read'))
 
     if name:
+        cursor.execute(
+            "SELECT * FROM books WHERE name LIKE '%" + name + "%'"
+        )
         cursor.execute(
             "SELECT * FROM books WHERE name LIKE '%" + name + "%'"
         )
